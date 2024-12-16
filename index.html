@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Filter Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .movie {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kinolar </h1>
+    
+    <label for="movieInput">Kinolarni ismini yozing</label>
+    <input type="text" id="movieInput" placeholder="Type movie name" onkeyup="filterMovies()">
+    <select name="" id="item" onchange="selektFunction()">
+        <option value="">Sort by</option>
+        <option value="name">by (A->Z)</option>
+        <option value="name2">bu(Z-A)</option>
+        <option value="rating">by rating</option>
+        <option value="new">by old to new</option>
+        <option value="old">by new to old</option>
+    </select>   
+    <h3>kino</h3>
+    <ul id="movieList"></ul>
+        <script src="./main.js"></script>
+</body>
+</html>
